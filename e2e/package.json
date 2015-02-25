@@ -1,0 +1,19 @@
+{
+  "name": "e2e",
+  "version": "0.0.1",
+  "description": "test sample for end2end",
+  "main": "index.js",
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "power-assert": "^0.10.2",
+    "restify": "^2.8.5",
+    "sinon": "^1.12.2",
+    "superagent": "^0.21.0",
+    "zombie": "^2.5.1"
+  },
+  "scripts": {
+    "test": "mocha ./test/*"
+  },
+  "author": "satkaku",
+  "license": "MIT"
+}
