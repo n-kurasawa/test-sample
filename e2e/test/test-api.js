@@ -10,6 +10,7 @@ describe("api E2E test sample", function(){
 
 		// If you want DB setup, write here.
 
+		// dummy application ----------------------------------
 		server = restify.createServer();
 		server.get("/test/", function(req,res,next){
 			res.send("sample api");
@@ -23,6 +24,8 @@ describe("api E2E test sample", function(){
 		server.listen(3000, function(){
 			done();	
 		});
+		// ---------------------------------- dummy application
+		
 	});
 
 	afterEach(function(done){
