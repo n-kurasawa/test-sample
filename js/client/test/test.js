@@ -12,13 +12,13 @@ describe("karma sample", function(){
 
 	it("you can test with jQuery", function(){
 		var app = new DummyApp();
-		app.getDivCount().should.equal(0);
+		app.getDivCount().should.equal(1);
 	});
 
 	it("you can test with html", function(){
 		$('body').append(window.__html__['test/fixture.html']);
 		var app = new DummyApp();
-		app.getDivCount().should.equal(1);
+		app.getDivCount().should.equal(0);
 	});
 
 });
