@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "test sample for client side js",
   "scripts": {
-    "test": "mocha --require intelli-espower-loader ./test/*js"
+    "test": "karma start karma.conf.js"
   },
   "author": "satkaku",
   "license": "MIT",
