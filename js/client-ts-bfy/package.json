@@ -16,10 +16,12 @@
     "karma-html2js-preprocessor": "^0.1.0",
     "karma-mocha": "^0.2.1",
     "karma-phantomjs-launcher": "^0.2.3",
+    "karma-sinon": "^1.0.4",
     "karma-typescript-preprocessor": "0.0.21",
     "mocha": "^2.3.4",
     "phantomjs": "^1.9.19",
     "power-assert": "^1.2.0",
+    "sinon": "^1.17.2",
     "tsify": "^0.13.2",
     "typescript": "^1.7.5"
   }
