@@ -1,0 +1,25 @@
+{
+  "name": "ts-bfy-efy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^12.0.2",
+    "espowerify": "^1.0.0",
+    "karma": "^0.13.19",
+    "karma-browserify": "^4.4.2",
+    "karma-mocha": "^0.2.1",
+    "karma-phantomjs-launcher": "^0.2.3",
+    "karma-typescript-preprocessor": "0.0.21",
+    "mocha": "^2.3.4",
+    "phantomjs": "^1.9.19",
+    "power-assert": "^1.2.0",
+    "tsify": "^0.13.2",
+    "typescript": "^1.7.5"
+  }
+}
