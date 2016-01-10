@@ -8,4 +8,10 @@ export default class TestTarget {
   getDivText(): string {
     return $('div').text();
   }
+
+  setEvent() {
+    $("button").on("click", ()=>{
+      $("div").text("world");
+    });
+  }
 }
