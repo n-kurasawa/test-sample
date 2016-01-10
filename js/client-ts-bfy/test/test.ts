@@ -3,21 +3,20 @@ import TestTarget from '../src/testTarget';
 import * as assert from 'power-assert';
 
 describe("sample test", ()=>{
-  let server;
+  it("1+1=2であるべき", ()=>{
+    let testTarget = new TestTarget();
+    assert(testTarget.sum(1,1) == 2);
+  });
+
+});
+
+describe("DOMのテスト",()=>{
   before(() => {
     $("body").html(window.__html__['test/fixtures/fixture.html']);
-    server = sinon.fakeServer.create();
   });
 
   after(()=>{
     $("body").html("");
-    server.restore();
-    server = null;
-  });
-
-  it("1+1=2であるべき", ()=>{
-    let testTarget = new TestTarget();
-    assert(testTarget.sum(1,1) == 2);
   });
 
   it("divのテキストが取得できる", ()=>{
@@ -30,6 +29,18 @@ describe("sample test", ()=>{
     testTarget.setEvent();
     $("button").click();
     assert(testTarget.getDivText() == 'world');
+  });
+});
+
+describe("apiのテスト", ()=>{
+  let server;
+  before(() => {
+    server = sinon.fakeServer.create();
+  });
+
+  after(()=>{
+    server.restore();
+    server = null;
   });
 
   it("ajaxのモック", (done)=>{
